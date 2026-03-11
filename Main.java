@@ -1,3 +1,6 @@
+//Nome: Thiago Mussolino Tincani Ribeiro
+//Aula 2
+
 import java.util.Scanner;
 
 public class Main {

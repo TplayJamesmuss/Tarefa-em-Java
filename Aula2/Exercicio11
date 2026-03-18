@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Exercicio11 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o ano de nascimento: ");
+        int anoNascimento = sc.nextInt();
+
+        System.out.print("Digite o ano atual: ");
+        int anoAtual = sc.nextInt();
+
+        int idadeAtual = anoAtual - anoNascimento;
+        int idade2030 = 2030 - anoNascimento;
+
+        System.out.println("Idade atual: " + idadeAtual);
+        System.out.println("Idade em 2030: " + idade2030);
+
+        sc.close();
+    }
+}

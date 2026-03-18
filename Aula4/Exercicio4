@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Exercicio4 {
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Informe o plano de trabalho A, B ou C:");
+    char plano = sc.next().toUpperCase().charAt(0);
+
+    System.out.println("Informe o salário atual:");
+    double salario = sc.nextDouble();
+    double novoSalario;
+
+    switch (plano) {
+      case 'A':
+        novoSalario = salario * 1.10;
+        break;
+      case 'B':
+        novoSalario = salario * 1.15;
+        break;
+      case 'C':
+        novoSalario = salario * 1.20;
+        break;
+      default:
+        System.out.println("Plano inválido");
+        return;
+    }
+    System.out.println("Novo salário: " + novoSalario);
+  }
+}

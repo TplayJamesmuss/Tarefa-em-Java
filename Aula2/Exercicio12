@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Exercicio12 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        double numero = sc.nextDouble();
+        double quadrado = Math.pow(numero, 2);
+        double cubo = Math.pow(numero, 3);
+        double raiz = Math.sqrt(numero);
+        double potencia10 = Math.pow(numero, 10);
+
+        System.out.println("Número ao quadrado: " + quadrado);
+        System.out.println("Número ao cubo: " + cubo);
+        System.out.println("Raiz quadrada: " + raiz);
+        System.out.println("Número elevado à potência 10: " + potencia10);
+        sc.close();
+    }
+}

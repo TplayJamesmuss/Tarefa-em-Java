@@ -1,0 +1,10 @@
+public class Exercicio10 {
+    public static void main(String[] args) {
+
+        double pi = 3.14159;
+        double raio = 5.0;
+        double areaCirculo = pi * Math.pow(raio, 2);
+
+        System.out.println("Área do círculo: " + areaCirculo + " cm²");
+    }
+}

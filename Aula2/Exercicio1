@@ -1,0 +1,13 @@
+public class Exercicio1 {
+
+    public static void main(String[] args) {
+
+        String nomeCompleto = "Thiago Mussolino Tincani Ribeiro";
+        String ra = "1142817406";
+        String curso = "Análise e Desenvolvimento de Sistemas";
+
+        System.out.println(nomeCompleto);
+        System.out.println(ra);
+        System.out.println(curso);
+    }
+}

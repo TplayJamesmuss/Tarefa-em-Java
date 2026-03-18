@@ -1,0 +1,14 @@
+public class Exercicio6 {
+    public static void main(String[] args) {
+
+        double exp1 = (20 - 15) / 2.0;
+        double exp2 = Math.pow(2, (5.0 / 20.0)) + 30.0 / Math.pow(15, 2);
+        double exp3 = 35.0 / (6 + 2);
+        int exp4 = 23 % 4;
+
+        System.out.println("(20 - 15) / 2 = " + exp1);
+        System.out.println("2^(5/20) + 30/(15^2) = " + exp2);
+        System.out.println("35 / (6+2) = " + exp3);
+        System.out.println("23 módulo 4 = " + exp4);
+    }
+}

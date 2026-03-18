@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Exercicio6 {
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Digite o código do produto:");
+    int codigo = sc.nextInt();
+
+    System.out.println("Digite a quantidade:");
+    int quantidade = sc.nextInt();
+
+    double preco = 0;
+    String produto = "";
+
+    switch (codigo) {
+      case 100:
+        produto = "Cachorro Quente";
+        preco = 1.20;
+        break;
+      case 101:
+        produto = "Bauru Simples";
+        preco = 1.30;
+        break;
+      case 102:
+        produto = "Bauru com Ovo";
+        preco = 1.50;
+        break;
+      case 103:
+        produto = "Hamburguer";
+        preco = 1.20;
+        break;
+      case 104:
+        produto = "Cheeseburger";
+        preco = 1.30;
+        break;
+      case 105:
+        produto = "Refrigerante";
+        preco = 1.00;
+        break;
+      default:
+        System.out.println("Código inválido");
+        return;
+    }
+
+    double total = preco * quantidade;
+
+    System.out.println("Produto: " + produto);
+    System.out.println("Valor a pagar: R$" + total);
+  }
+}

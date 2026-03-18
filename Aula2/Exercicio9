@@ -1,0 +1,7 @@
+public class Exercicio9 {
+    public static void main(String[] args) {
+        double lado = 350.0;
+        double areaQuadrado = lado * lado;
+        System.out.println("Área do quadrado: " + areaQuadrado + " m²");
+    }
+}

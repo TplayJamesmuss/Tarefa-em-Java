@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Exercicio12 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o salário: ");
+        double salarioINSS = sc.nextDouble();
+        double desconto;
+
+        if (salarioINSS <= 600) {
+            desconto = 0;
+        } else if (salarioINSS <= 1200) {
+            desconto = salarioINSS * 0.20;
+        } else if (salarioINSS <= 2000) {
+            desconto = salarioINSS * 0.25;
+        } else {
+            desconto = salarioINSS * 0.30;
+        }
+        System.out.println("Desconto INSS: R$ " + desconto);
+        sc.close();
+    }
+}

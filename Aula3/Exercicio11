@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exercicio11 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite a idade do nadador: ");
+        int idadeNadador = sc.nextInt();
+
+        if (idadeNadador >= 5 && idadeNadador <= 7) {
+            System.out.println("Categoria: Infantil A");
+        } else if (idadeNadador <= 10) {
+            System.out.println("Categoria: Infantil B");
+        } else if (idadeNadador <= 13) {
+            System.out.println("Categoria: Juvenil A");
+        } else if (idadeNadador <= 17) {
+            System.out.println("Categoria: Juvenil B");
+        } else if (idadeNadador >= 18) {
+            System.out.println("Categoria: Sênior");
+        } else {
+            System.out.println("Idade fora das categorias");
+        }
+        sc.close();
+    }
+}

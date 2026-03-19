@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Exercicio13 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o primeiro número: ");
+        double numA = sc.nextDouble();
+
+        System.out.print("Digite o segundo número: ");
+        double numB = sc.nextDouble();
+
+        System.out.print("Digite a operação (+, -, *, /): ");
+        char operacao = sc.next().charAt(0);
+
+        if (operacao == '+') {
+            System.out.println("Resultado: " + (numA + numB));
+        }
+        else if (operacao == '-') {
+            System.out.println("Resultado: " + (numA - numB));
+        }
+        else if (operacao == '*') {
+            System.out.println("Resultado: " + (numA * numB));
+        }
+        else if (operacao == '/') {
+            if (numB > 0) {
+                System.out.println("Resultado: " + (numA / numB));
+            } else {
+                System.out.println("Impossível dividir!!");
+            }
+        }
+        else {
+            System.out.println("Sinal inválido");
+        }
+        sc.close();
+    }
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Exercicio7 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int i = 1, contador = 0;
+        double peso, altura, imc;
+
+        while (i <= 10) {
+            System.out.print("Digite o peso: ");
+            peso = sc.nextDouble();
+
+            System.out.print("Digite a altura: ");
+            altura = sc.nextDouble();
+
+            imc = peso / (altura * altura);
+            if (imc >= 18.5 && imc <= 24.9) {
+                contador++;
+            }
+            i++;
+        }
+        System.out.println("Quantidade com IMC normal: " + contador);
+    }
+}

@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Exercicio5 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        double n1, n2, media, somaClasse = 0;
+        int aprovados = 0, exame = 0, reprovados = 0;
+
+        for (int i = 1; i <= 6; i++) {
+            System.out.print("Nota 1: ");
+            n1 = sc.nextDouble();
+            System.out.print("Nota 2: ");
+            n2 = sc.nextDouble();
+            media = (n1 + n2) / 2;
+            somaClasse += media;
+            System.out.println("Média: " + media);
+
+            if (media <= 3) {
+                System.out.println("REPROVADO");
+                reprovados++;
+            } else if (media < 7) {
+                System.out.println("EXAME");
+                exame++;
+            } else {
+                System.out.println("APROVADO");
+                aprovados++;
+            }
+        }
+        System.out.println("Aprovados: " + aprovados);
+        System.out.println("Exame: " + exame);
+        System.out.println("Reprovados: " + reprovados);
+        System.out.println("Média da classe: " + (somaClasse / 6));
+    }
+}

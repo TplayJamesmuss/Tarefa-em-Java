@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Exercicio8 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int i = 1;
+        double n1, n2, media;
+
+        while (i <= 5) {
+            do {
+                System.out.print("Digite a primeira nota do aluno " + i + ": ");
+                n1 = sc.nextDouble();
+            } while (n1 < 0 || n1 > 10);
+            do {
+                System.out.print("Digite a segunda nota do aluno " + i + ": ");
+                n2 = sc.nextDouble();
+            } while (n2 < 0 || n2 > 10);
+            media = (n1 + n2) / 2;
+            System.out.println("Média do aluno " + i + ": " + media);
+            i++;
+        }
+    }
+}

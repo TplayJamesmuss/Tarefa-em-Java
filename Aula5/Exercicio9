@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Exercicio9 {
+  public static void main(String[] args) {
+
+    Scanner sc = new Scanner(System.in);
+    int codigo, quantidade;
+    double totalProduto, totalCompra = 0;
+    char continuar = 0;
+
+    do {
+      System.out.print("Digite o código do produto: ");
+      codigo = sc.nextInt();
+      System.out.print("Digite a quantidade: ");
+      quantidade = sc.nextInt();
+      double preco = 0;
+
+      if (codigo == 100) preco = 1.20;
+      else if (codigo == 101) preco = 1.30;
+      else if (codigo == 102) preco = 1.50;
+      else if (codigo == 103) preco = 1.20;
+      else if (codigo == 104) preco = 1.30;
+      else if (codigo == 105) preco = 1.00;
+      else {
+        System.out.println("Código inválido!");
+        continue;
+      }
+
+      totalProduto = preco * quantidade;
+      totalCompra += totalProduto;
+
+      System.out.println("Total do produto: R$ " + totalProduto);
+      System.out.print("Deseja continuar comprando? (s/n): ");
+      continuar = sc.next().charAt(0);
+
+    } while (continuar == 's' || continuar == 'S');
+    System.out.println("Total da compra: R$ " + totalCompra);
+  }
+}

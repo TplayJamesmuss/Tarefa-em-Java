@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Exercicio7 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int idade, maiores50 = 0, contAltura = 0, pesoMenor40 = 0;
+        double altura, peso, somaAltura = 0;
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.print("Idade: ");
+            idade = sc.nextInt();
+
+            System.out.print("Altura: ");
+            altura = sc.nextDouble();
+
+            System.out.print("Peso: ");
+            peso = sc.nextDouble();
+
+            if (idade > 50) maiores50++;
+
+            if (idade >= 10 && idade <= 20) {
+                somaAltura += altura;
+                contAltura++;
+            }
+            if (peso < 40) pesoMenor40++;
+        }
+        System.out.println("Maiores de 50 anos: " + maiores50);
+        if (contAltura > 0) {
+            System.out.println("Média das alturas (10 a 20 anos): " + (somaAltura / contAltura));
+        }
+        System.out.println("Porcentagem peso < 40kg: " + (pesoMenor40 * 100.0 / 10) + "%");
+    }
+}
